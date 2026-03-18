@@ -1,5 +1,7 @@
 # Incident Response Report – Integration Failure Scenario
 
+This report presents an incident response case study involving a system integration failure, focusing on investigation, root cause analysis, and preventative controls.
+
 ## 1. Incident Overview
 An issue was identified where purchase order (PO) messages failed to be successfully transmitted between systems, resulting in delays in order processing.
 
@@ -47,17 +49,22 @@ The root cause was identified as a configuration issue affecting message process
 ---
 
 ## 7. Lessons Learned
-- Importance of proactive monitoring and alerting  
-- Need for clear visibility of transaction failures  
-- Value of structured incident investigation  
+- The importance of proactive monitoring and alerting for early detection  
+- The need for clear visibility of transaction failures  
+- The value of structured and repeatable incident response processes  
+- The importance of configuration management and validation controls
 
 ---
 
 ## 8. Preventative Controls
+
+Based on the incident, the following control improvements are recommended:
+
 - Implement automated alerting for failed transactions  
-- Improve logging and monitoring capabilities  
-- Establish standard incident response procedures  
-- Introduce validation checks for system configurations  
+- Improve logging and monitoring capabilities   
+- Implementing validation checks for system configurations
+- Establish clear escalation procedures for incident handling
+- Define ownership and accountability for incident response and system configuration management
 
 ---
 
