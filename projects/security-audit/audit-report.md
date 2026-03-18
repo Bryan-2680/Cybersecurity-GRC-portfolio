@@ -30,7 +30,7 @@ Key assets identified include:
 ## 4. Risk Assessment
 
 ### Risk 1: Weak Access Controls
-Users may have excessive permissions or shared accounts, increasing the risk of unauthorised access.
+Users may have excessive permissions or retain access after role changes, increasing the risk of unauthorised access and segregation of duties conflicts.
 
 **Impact:** High  
 **Likelihood:** Medium  
@@ -84,6 +84,8 @@ Employees may not be trained to recognise phishing attempts.
 
 ## 7. Conclusion
 The organisation faces several common but significant security risks, particularly in access control and user authentication.
+
+These risks could result in operational disruption, data loss, or reputational damage if not addressed.
 
 By implementing basic security controls such as MFA, access restrictions, and user awareness training, the organisation can significantly reduce its risk exposure and improve its overall security posture.
 
