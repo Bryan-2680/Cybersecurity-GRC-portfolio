@@ -60,8 +60,16 @@ Employees may not be trained to recognise phishing attempts.
 **Likelihood:** High  
 
 ---
+## 5. Risk Rating Method
 
-## 5. Control Recommendations
+Risk ratings are determined based on a combination of impact and likelihood:
+
+- **Impact**: The potential business consequence if the risk materialises (e.g. data loss, operational disruption)
+- **Likelihood**: The probability of the risk occurring based on the current control environment
+
+Risk levels are classified as Low, Medium, High, or Critical.
+
+## 6. Control Recommendations
 
 - Implement Multi-Factor Authentication (MFA) for all users  
 - Enforce least privilege access and remove shared accounts  
@@ -71,7 +79,7 @@ Employees may not be trained to recognise phishing attempts.
 
 ---
 
-## 6. Risk Summary
+## 7. Risk Summary & Prioritisation
 
 | Risk                          | Impact | Likelihood | Rating |
 |------------------------------|--------|------------|--------|
@@ -82,7 +90,7 @@ Employees may not be trained to recognise phishing attempts.
 
 ---
 
-## 7. Conclusion
+## 8. Conclusion
 The organisation faces several common but significant security risks, particularly in access control and user authentication.
 
 These risks could result in operational disruption, data loss, or reputational damage if not addressed.
