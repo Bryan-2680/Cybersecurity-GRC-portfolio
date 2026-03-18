@@ -27,10 +27,12 @@ Key assets identified include:
   
 ---
 
-## 3. Audit Approach
+## 4. Audit Approach
 The audit was conducted using a risk-based approach, focusing on identifying key assets, assessing potential threats and vulnerabilities, and evaluating the effectiveness of existing or expected controls.
 
 Risks were prioritised based on potential business impact and likelihood of occurrence.
+
+---
 
 ## 5. Risk Assessment
 
@@ -74,15 +76,6 @@ Risk ratings are determined based on a combination of impact and likelihood:
 
 Risk levels are classified as Low, Medium, High, or Critical.
 
-## 7. Control Recommendations
-
-- Implement Multi-Factor Authentication (MFA) for all users  
-- Enforce least privilege access and remove shared accounts  
-- Apply regular patching and endpoint protection  
-- Provide regular security awareness training, particularly focused on phishing and credential security  
-- Establish password policies (complexity + rotation)
-- Assign clear ownership for security controls and risk management activities
-
 ---
 
 ## 8. Risk Summary & Prioritisation
@@ -93,6 +86,17 @@ Risk levels are classified as Low, Medium, High, or Critical.
 | No MFA                       | High   | High       | Critical |
 | Unsecured Endpoints          | Medium | Medium     | Medium |
 | Phishing Risk                | High   | High       | Critical |
+
+---
+
+## 7. Control Recommendations
+
+- Implement Multi-Factor Authentication (MFA) for all users  
+- Enforce least privilege access and remove shared accounts  
+- Apply regular patching and endpoint protection  
+- Provide regular security awareness training, particularly focused on phishing and credential security  
+- Establish password policies (complexity + rotation)
+- Assign clear ownership for security controls and risk management activities
 
 ---
 
