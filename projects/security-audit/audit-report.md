@@ -24,10 +24,15 @@ Key assets identified include:
 - Email systems and communications  
 - Internal documents and sensitive business data  
 - Network infrastructure (routers, Wi-Fi)
-
+  
 ---
 
-## 4. Risk Assessment
+## 3. Audit Approach
+The audit was conducted using a risk-based approach, focusing on identifying key assets, assessing potential threats and vulnerabilities, and evaluating the effectiveness of existing or expected controls.
+
+Risks were prioritised based on potential business impact and likelihood of occurrence.
+
+## 5. Risk Assessment
 
 ### Risk 1: Weak Access Controls
 Users may have excessive permissions or retain access after role changes, increasing the risk of unauthorised access and segregation of duties conflicts.
@@ -60,7 +65,7 @@ Employees may not be trained to recognise phishing attempts.
 **Likelihood:** High  
 
 ---
-## 5. Risk Rating Method
+## 6. Risk Rating Method
 
 Risk ratings are determined based on a combination of impact and likelihood:
 
@@ -69,17 +74,18 @@ Risk ratings are determined based on a combination of impact and likelihood:
 
 Risk levels are classified as Low, Medium, High, or Critical.
 
-## 6. Control Recommendations
+## 7. Control Recommendations
 
 - Implement Multi-Factor Authentication (MFA) for all users  
 - Enforce least privilege access and remove shared accounts  
 - Apply regular patching and endpoint protection  
-- Provide basic security awareness training  
+- Provide regular security awareness training, particularly focused on phishing and credential security  
 - Establish password policies (complexity + rotation)
+- Assign clear ownership for security controls and risk management activities
 
 ---
 
-## 7. Risk Summary & Prioritisation
+## 8. Risk Summary & Prioritisation
 
 | Risk                          | Impact | Likelihood | Rating |
 |------------------------------|--------|------------|--------|
@@ -90,7 +96,7 @@ Risk levels are classified as Low, Medium, High, or Critical.
 
 ---
 
-## 8. Conclusion
+## 9. Conclusion
 The organisation faces several common but significant security risks, particularly in access control and user authentication.
 
 These risks could result in operational disruption, data loss, or reputational damage if not addressed.
