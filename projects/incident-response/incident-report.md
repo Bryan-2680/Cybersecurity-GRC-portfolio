@@ -12,7 +12,16 @@ The issue was detected through monitoring of failed transactions and missing ack
 
 ---
 
-## 3. Impact Assessment
+## 3. Timeline
+- Issue detected through failed transaction monitoring  
+- Initial investigation initiated  
+- Root cause identified through log analysis  
+- Fix implemented and transactions reprocessed  
+- System monitored to confirm resolution
+
+---
+
+## 4. Impact Assessment
 - Delayed order processing  
 - Potential disruption to supply chain operations  
 - Risk of incomplete or duplicate transactions  
@@ -23,28 +32,28 @@ The incident had operational impact and required timely resolution to prevent fu
 
 ---
 
-## 4. Investigation & Root Cause Analysis
+## 5. Investigation & Root Cause Analysis
 Initial investigation involved reviewing system logs and transaction records.
 
 The root cause was identified as a configuration issue affecting message processing and validation, which resulted in failed or unacknowledged transactions.
 
 ---
 
-## 5. Containment & Resolution
+## 6. Containment & Resolution
 - Affected transactions were identified and reprocessed  
 - Configuration issues were corrected  
 - Systems were monitored to confirm restoration of normal operations  
 
 ---
 
-## 6. Lessons Learned
+## 7. Lessons Learned
 - Importance of proactive monitoring and alerting  
 - Need for clear visibility of transaction failures  
 - Value of structured incident investigation  
 
 ---
 
-## 7. Preventative Controls
+## 8. Preventative Controls
 - Implement automated alerting for failed transactions  
 - Improve logging and monitoring capabilities  
 - Establish standard incident response procedures  
@@ -52,7 +61,7 @@ The root cause was identified as a configuration issue affecting message process
 
 ---
 
-## 8. Conclusion
+## 9. Conclusion
 This incident highlights the importance of effective monitoring, structured investigation, and control design in maintaining system reliability.
 
 Addressing these areas can reduce the likelihood of future incidents and improve overall operational resilience.
