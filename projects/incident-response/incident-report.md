@@ -1,0 +1,58 @@
+# Incident Response Report – Integration Failure Scenario
+
+## 1. Incident Overview
+An issue was identified where purchase order (PO) messages failed to be successfully transmitted between systems, resulting in delays in order processing.
+
+The incident impacted communication between internal systems and external vendors, affecting normal business operations.
+
+---
+
+## 2. Detection
+The issue was detected through monitoring of failed transactions and missing acknowledgements, indicating that messages were not being processed correctly.
+
+---
+
+## 3. Impact Assessment
+- Delayed order processing  
+- Potential disruption to supply chain operations  
+- Risk of incomplete or duplicate transactions  
+- Increased manual intervention required
+- Potential financial and reputational impact due to delayed or incorrect order fulfilment
+
+The incident had operational impact and required timely resolution to prevent further disruption.
+
+---
+
+## 4. Investigation & Root Cause Analysis
+Initial investigation involved reviewing system logs and transaction records.
+
+The root cause was identified as a configuration issue affecting message processing and validation, which resulted in failed or unacknowledged transactions.
+
+---
+
+## 5. Containment & Resolution
+- Affected transactions were identified and reprocessed  
+- Configuration issues were corrected  
+- Systems were monitored to confirm restoration of normal operations  
+
+---
+
+## 6. Lessons Learned
+- Importance of proactive monitoring and alerting  
+- Need for clear visibility of transaction failures  
+- Value of structured incident investigation  
+
+---
+
+## 7. Preventative Controls
+- Implement automated alerting for failed transactions  
+- Improve logging and monitoring capabilities  
+- Establish standard incident response procedures  
+- Introduce validation checks for system configurations  
+
+---
+
+## 8. Conclusion
+This incident highlights the importance of effective monitoring, structured investigation, and control design in maintaining system reliability.
+
+Addressing these areas can reduce the likelihood of future incidents and improve overall operational resilience.
