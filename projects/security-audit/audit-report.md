@@ -1,7 +1,7 @@
 # Security Audit Report – Small Enterprise Environment
 
 ## 1. Objective
-The objective of this audit is to assess the security posture of a small enterprise IT environment, identify potential risks, and recommend appropriate controls aligned with industry best practices.
+The objective of this audit is to assess the security posture of a small enterprise IT environment, identify key risks, and recommend practical controls to reduce business and operational risk, aligned with industry best practices.
 
 ---
 
@@ -14,6 +14,8 @@ This audit considers a small organisation with the following environment:
 - No dedicated security team
 
 The assessment focuses on access control, data protection, system security, and incident preparedness.
+
+The audit is informed by recognised frameworks such as the NIST Cybersecurity Framework and ISO 27001 principles.
 
 ---
 
@@ -45,7 +47,7 @@ Users may have excessive permissions or retain access after role changes, increa
 ---
 
 ### Risk 2: Lack of Multi-Factor Authentication (MFA)
-Accounts protected only by passwords are vulnerable to compromise.
+Accounts protected only by passwords are vulnerable to compromise through phishing, credential reuse, or brute force attacks
 
 **Impact:** High  
 **Likelihood:** High  
@@ -78,7 +80,7 @@ Risk levels are classified as Low, Medium, High, or Critical.
 
 ---
 
-## 8. Risk Summary & Prioritisation
+## 7. Risk Summary & Prioritisation
 
 | Risk                          | Impact | Likelihood | Rating |
 |------------------------------|--------|------------|--------|
@@ -89,14 +91,15 @@ Risk levels are classified as Low, Medium, High, or Critical.
 
 ---
 
-## 7. Control Recommendations
+## 8. Control Recommendations
 
 - Implement Multi-Factor Authentication (MFA) for all users  
 - Enforce least privilege access and remove shared accounts  
 - Apply regular patching and endpoint protection  
 - Provide regular security awareness training, particularly focused on phishing and credential security  
 - Establish password policies (complexity + rotation)
-- Assign clear ownership for security controls and risk management activities
+- Define clear ownership and accountability for security controls and risk management activities
+- Implement basic logging and monitoring to detect suspicious activity
 
 ---
 
@@ -109,7 +112,7 @@ By implementing basic security controls such as MFA, access restrictions, and us
 
 ---
 
-## 8. Framework Alignment
+## 10. Framework Alignment
 This assessment is broadly aligned with:
 - NIST Cybersecurity Framework (Identify, Protect)
 - ISO 27001 principles (access control, asset management, risk treatment)
