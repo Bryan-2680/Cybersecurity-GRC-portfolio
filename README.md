@@ -8,6 +8,16 @@ My background in Law (BCL) and Information Systems (MSc) has given me a strong f
 
 ---
 
+## Core Focus Areas
+
+- IT Governance, Risk, and Compliance (GRC)  
+- Risk Assessment and Control Design  
+- Incident Response and Root Cause Analysis  
+- Access Control and Identity Management  
+- Business-Focused Cybersecurity
+  
+---
+
 ## Portfolio Overview
 This portfolio contains practical cybersecurity projects that demonstrate my ability to apply security and risk concepts in realistic scenarios.
 
@@ -21,14 +31,26 @@ The focus is on:
 
 ## Projects
 
-### Security Audit (NIST-based)
-A structured security review of a small enterprise environment, identifying key assets, risks, and recommended controls.
+## Projects
 
-### Incident Response Case Study
-An analysis of a system-related incident, including investigation, impact assessment, and preventative recommendations.
+### Security Audit – Risk Assessment
+Conducted a structured security audit of a small enterprise environment, identifying key risks and recommending controls aligned with NIST and ISO 27001 principles.
 
-### Access Control Risk Assessment
-A review of role-based access risks, including excessive permissions and segregation of duties concerns.
+Focus areas included access control, authentication, and user awareness, with emphasis on business impact and risk prioritisation.
+
+---
+
+### Incident Response – Integration Failure Case Study
+Analysed a system integration failure affecting transaction processing between systems.
+
+The project focused on incident detection, root cause analysis, and the implementation of preventative controls to reduce operational risk and improve system resilience.
+
+---
+
+### Access Control – Role-Based Risk Assessment
+Performed an access control assessment within a role-based environment, identifying excessive permissions and segregation of duties risks.
+
+Recommended governance and control improvements aligned with least privilege and access management best practices.
 
 *(Projects are currently being developed and will be updated over time.)*
 
