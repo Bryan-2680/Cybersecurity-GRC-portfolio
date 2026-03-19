@@ -6,6 +6,8 @@ I am a cybersecurity and GRC-focused professional currently working as an Applic
 
 My background in Law (BCL) and Information Systems (MSc) has given me a strong foundation in regulatory compliance, risk management, and IT governance. I am particularly interested in how security controls can be applied in real-world business environments to reduce risk and improve system reliability.
 
+This portfolio complements my professional experience by applying structured cybersecurity and risk management concepts to realistic scenarios.
+
 ---
 
 ## Core Focus Areas
