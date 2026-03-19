@@ -72,7 +72,7 @@ The project focused on detecting abnormal patterns, supporting incident investig
 ## Contact
 Kinsale, Co. Cork, Ireland  
 bod96@hotmail.com  
-LinkedIn:www.linkedin.com/in/bryan-o-donovan-96b18612a
+Linkedin: https://www.linkedin.com/in/bryan-o-donovan-96b18612a/
 
 ---
 
