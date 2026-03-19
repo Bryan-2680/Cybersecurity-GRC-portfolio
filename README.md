@@ -1,5 +1,5 @@
 # Cybersecurity-GRC-portfolio
-Portfolio demonstrating practical experience in cybersecurity risk management, control design, and incident analysis, bridging technical systems knowledge with governance, risk, and compliance principles.
+Cybersecurity GRC portfolio demonstrating risk assessment, incident response, access control, and security monitoring in enterprise-style scenarios.
 
 ## About Me
 I am a cybersecurity and GRC-focused professional currently working as an Application Support Engineer at Verizon. In my role, I support enterprise SAP and EDI systems, with a focus on vendor onboarding, system integration, incident investigation, and resolving operational issues.
