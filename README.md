@@ -1,4 +1,4 @@
-# Cybersecurity-portfolio
+# Cybersecurity-GRC-portfolio
 Portfolio demonstrating practical experience in cybersecurity risk management, control design, and incident analysis, bridging technical systems knowledge with governance, risk, and compliance principles.
 
 ## About Me
@@ -13,7 +13,8 @@ My background in Law (BCL) and Information Systems (MSc) has given me a strong f
 - IT Governance, Risk, and Compliance (GRC)  
 - Risk Assessment and Control Design  
 - Incident Response and Root Cause Analysis  
-- Access Control and Identity Management  
+- Access Control and Identity Management
+- Security Monitoring and Log Analysis  
 - Business-Focused Cybersecurity
   
 ---
@@ -28,8 +29,6 @@ The focus is on:
 - Applying frameworks such as NIST and ISO 27001  
 
 ---
-
-## Projects
 
 ## Projects
 
@@ -52,7 +51,10 @@ Performed an access control assessment within a role-based environment, identify
 
 Recommended governance and control improvements aligned with least privilege and access management best practices.
 
-*(Projects are currently being developed and will be updated over time.)*
+### Log Analysis – Suspicious Activity Investigation
+Analysed system log data to identify potentially suspicious behaviour using query-based techniques.
+
+The project focused on detecting abnormal patterns, supporting incident investigation, and improving monitoring controls to reduce security risk.
 
 ---
 
