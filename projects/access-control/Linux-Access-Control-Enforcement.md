@@ -6,6 +6,19 @@ I performed a security audit of file and directory permissions within a Linux en
 
 The objective was to enforce the principle of least privilege by removing excessive permissions and restricting access to sensitive resources. This project demonstrates the practical implementation of access control controls aligned with cybersecurity governance and risk management principles.
 
+## Initial Environment
+
+The /home/researcher2/projects directory contained several files and one subdirectory with inconsistent and overly permissive access settings.
+
+Key issues identified in the initial environment included:
+
+- project_k.txt allowed read and write access for owner, group, and others
+- project_r.txt and project_t.txt allowed group write access
+- project_x.txt had inappropriate permissions for a hidden archived file
+- the drafts directory allowed group execute access, creating unnecessary directory exposure
+
+This initial state introduced risks related to unauthorised modification, excessive permissions, and avoidable access to sensitive content.
+
 ## Assessment and Findings
 
 Using the command below, I reviewed all files in the directory, including hidden files:
@@ -42,9 +55,9 @@ This allowed group traversal of the directory, introducing risk of unauthorised 
 
 Linux permissions are represented by three permission groups:
 
-Owner
-Group
-Others
+- Owner
+- Group
+- Others
 
 Each numeric value is a sum of the following permissions:
 
