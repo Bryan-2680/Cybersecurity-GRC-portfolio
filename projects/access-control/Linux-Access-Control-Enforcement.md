@@ -1,4 +1,4 @@
-Linux Access Control Enforcement (File Permission Audit)
+# Linux Access Control Enforcement (File Permission Audit)
 Overview
 
 I performed a security audit of file and directory permissions within a Linux environment (/home/researcher2/projects) to identify and remediate access control weaknesses.
