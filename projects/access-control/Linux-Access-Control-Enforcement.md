@@ -67,10 +67,11 @@ Each numeric value is a sum of the following permissions:
 
 Examples used in this project:
 
-644 = owner can read and write; group and others can read only
-440 = owner and group can read only; others have no access
-700 = owner has full access; group and others have no access
-Remediation Actions
+- 644 = owner can read and write; group and others can read only
+- 440 = owner and group can read only; others have no access
+- 700 = owner has full access; group and others have no access
+
+## Remediation Actions
 Standardised File Permissions
 
 To remove unnecessary write access and standardise permissions across files, I used:
