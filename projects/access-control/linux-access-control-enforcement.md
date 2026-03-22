@@ -4,7 +4,7 @@
 
 I performed a security audit of file and directory permissions within a Linux environment (/home/researcher2/projects) to identify and remediate access control weaknesses.
 
-The objective was to enforce the principle of least privilege by removing excessive permissions and restricting access to sensitive resources. This project demonstrates the practical implementation of access control controls aligned with cybersecurity governance and risk management principles.
+The objective was to enforce the principle of least privilege by removing excessive permissions and restricting access to sensitive resources. This project demonstrates the practical implementation of access control aligned with cybersecurity governance and risk management principles.
 
 ## Initial Environment
 
@@ -111,7 +111,8 @@ These remediation actions:
 - protected sensitive research data
 - strengthened enforcement of access control policies
 - improved system integrity and auditability
-- GRC Alignment
+
+## GRC Alignment
 
 This project demonstrates how technical controls support broader governance, risk, and compliance objectives, including:
 
