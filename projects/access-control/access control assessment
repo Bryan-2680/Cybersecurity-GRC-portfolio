@@ -68,6 +68,7 @@ User access may not be regularly reviewed, allowing inappropriate access to pers
 - Implement automated controls to detect and prevent segregation of duties conflicts
 
 In a separate technical project, I enforced least privilege access control by auditing and modifying Linux file permissions using command-line tools (e.g. ls -la, chmod), addressing similar risks of excessive and unauthorised access in a practical environment. 
+
 ---
 
 ## 7. Conclusion
