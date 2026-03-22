@@ -66,10 +66,10 @@ chmod 644 project_k.txt project_r.txt project_t.txt
 
 This ensured that:
 
-the owner retained read and write access
-group access was reduced to read only
-others were limited to read only
-Secured Sensitive Hidden File
+- the owner retained read and write access
+- group access was reduced to read only
+- others were limited to read only
+- Secured Sensitive Hidden File
 
 To protect the archived hidden file, I used:
 
