@@ -27,7 +27,7 @@ ls -la /home/researcher2/projects
 
 The review identified the following issues:
 
-# Excessive Permissions
+## Excessive Permissions
 
 Some files had overly permissive access settings. For example:
 
@@ -35,7 +35,7 @@ Some files had overly permissive access settings. For example:
 
 This allowed write access to both group and others, creating a risk of unauthorised modification and weakening data integrity.
 
-# Inconsistent Access Control
+## Inconsistent Access Control
 
 Some files had permissions such as:
 
@@ -43,7 +43,7 @@ Some files had permissions such as:
 
 This meant the group still had write access, which was not aligned with least privilege principles.
 
-# Directory Exposure
+## Directory Exposure
 
 The drafts directory had permissions such as:
 
@@ -51,7 +51,7 @@ drwx--x--- drafts
 
 This allowed group traversal of the directory, introducing risk of unauthorised visibility into sensitive content.
 
-# Permission Interpretation
+## Permission Interpretation
 
 Linux permissions are represented by three permission groups:
 
@@ -72,8 +72,6 @@ Examples used in this project:
 - 700 = owner has full access; group and others have no access
 
 ## Remediation Actions
-
-# Standardised File Permissions
 
 To remove unnecessary write access and standardise permissions across files, I used:
 
