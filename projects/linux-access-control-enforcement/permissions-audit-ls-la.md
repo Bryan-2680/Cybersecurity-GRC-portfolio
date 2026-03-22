@@ -103,6 +103,12 @@ This ensured that:
 - the owner had full access
 - group and others had no access
 
+## Verification of Corrected Permissions
+
+After applying the permission changes, I re-ran `ls -la` to confirm that the files and directory permissions were corrected and aligned with least privilege principles.
+
+![Corrected file permissions after remediation](images/permissions-after-remediation.png)
+
 ## Security Impact
 
 These remediation actions:
