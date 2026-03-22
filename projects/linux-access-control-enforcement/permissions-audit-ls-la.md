@@ -25,6 +25,8 @@ Using the command below, I reviewed all files in the directory, including hidden
 
 ls -la /home/researcher2/projects
 
+![Initial permission audit using ls -la](images/permissions-audit-ls-la.png)
+
 The review identified the following issues:
 
 ## Excessive Permissions
