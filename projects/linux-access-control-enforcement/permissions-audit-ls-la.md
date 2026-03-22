@@ -30,6 +30,8 @@ ls -la /home/researcher2/projects
 
 ![Initial permission audit using ls -la](images/permissions-audit-ls-la.png)
 
+Using `ls -la` allowed me to review all files in the directory, including hidden files such as `.project_x.txt`, which would not appear in a standard `ls -l` output.
+
 The review identified the following issues:
 
 ### Excessive Permissions
@@ -62,6 +64,28 @@ drwx--x--- drafts
 
 This allowed group traversal of the directory, introducing risk of unauthorised visibility into sensitive content.
 
+### Interpreting the Permissions String
+
+Linux permissions are shown as a 10-character string. For example:
+
+`-rw-rw-r--`
+
+Each character has a specific meaning:
+
+- the first character indicates the file type
+- the next three characters show the owner's permissions
+- the following three characters show the group's permissions
+- the final three characters show the permissions for others
+
+In this example:
+
+`-` indicates a regular file
+`rw-` means the owner can read and write
+`rw-` means the group can read and write
+`r--` means others can read only
+
+This is important from a security perspective because group write access may allow unauthorised modification of files.
+
 ### Permission Interpretation
 
 Linux permissions are represented by three permission groups:
@@ -70,7 +94,7 @@ Linux permissions are represented by three permission groups:
 - Group
 - Others
 
-Each numeric value is a sum of the following permissions:
+Linux permissions can also be represented numerically. Each numeric value is a sum of the following permissions:
 
 4 = read
 2 = write
@@ -144,10 +168,8 @@ This project demonstrates how technical controls support broader governance, ris
 - alignment with role-based access control principles
 - practical implementation of security policy enforcement
 
-### Outcome
+### Summary
 
 By auditing and correcting file permissions, I transformed a misconfigured environment into one aligned with secure access control practices. This reduced both operational and compliance risk while demonstrating hands-on ability to assess and remediate permission-based security issues in Linux.
-
-### Portfolio Positioning
 
 This project complements my access control risk assessment by demonstrating how identified risks can be technically enforced and remediated within a live system environment.
