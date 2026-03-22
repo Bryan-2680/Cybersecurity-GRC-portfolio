@@ -1,25 +1,26 @@
-# Linux Access Control Enforcement (File Permission Audit)
+# Linux Access Control Enforcement 
+## File Permission Audit
 
-## Overview
+### Overview
 
-I performed a security audit of file and directory permissions within a Linux environment (/home/researcher2/projects) to identify and remediate access control weaknesses.
+I performed a security audit of file and directory permissions within a Linux environment `(/home/researcher2/projects)` to identify and remediate access control weaknesses.
 
 The objective was to enforce the principle of least privilege by removing excessive permissions and restricting access to sensitive resources. This project demonstrates the practical implementation of access control aligned with cybersecurity governance and risk management principles.
 
-## Initial Environment
+### Initial Environment
 
 The /home/researcher2/projects directory contained several files and one subdirectory with inconsistent and overly permissive access settings.
 
 Key issues identified in the initial environment included:
 
-- project_k.txt allowed read and write access for owner, group, and others
-- project_r.txt and project_t.txt allowed group write access
-- project_x.txt had inappropriate permissions for a hidden archived file
-- the drafts directory allowed group execute access, creating unnecessary directory exposure
+- `project_k.txt` allowed read and write access for owner, group, and others
+- `project_r.txt` and ```project_t.txt``` allowed group write access
+- `project_x.txt` had inappropriate permissions for a hidden archived file
+- the `drafts` directory allowed group execute access, creating unnecessary directory exposure
 
 This initial state introduced risks related to unauthorised modification, excessive permissions, and avoidable access to sensitive content.
 
-## Assessment and Findings
+### Assessment and Findings
 
 Using the command below, I reviewed all files in the directory, including hidden files:
 
@@ -31,7 +32,7 @@ ls -la /home/researcher2/projects
 
 The review identified the following issues:
 
-## Excessive Permissions
+### Excessive Permissions
 
 Some files had overly permissive access settings. For example:
 
@@ -41,7 +42,7 @@ Some files had overly permissive access settings. For example:
 
 This allowed write access to both group and others, creating a risk of unauthorised modification and weakening data integrity.
 
-## Inconsistent Access Control
+### Inconsistent Access Control
 
 Some files had permissions such as:
 
@@ -51,9 +52,9 @@ Some files had permissions such as:
 
 This meant the group still had write access, which was not aligned with least privilege principles.
 
-## Directory Exposure
+### Directory Exposure
 
-The drafts directory had permissions such as:
+The `drafts` directory had permissions such as:
 
 ```bash
 drwx--x--- drafts
@@ -61,7 +62,7 @@ drwx--x--- drafts
 
 This allowed group traversal of the directory, introducing risk of unauthorised visibility into sensitive content.
 
-## Permission Interpretation
+### Permission Interpretation
 
 Linux permissions are represented by three permission groups:
 
@@ -81,7 +82,7 @@ Examples used in this project:
 - 440 = owner and group can read only; others have no access
 - 700 = owner has full access; group and others have no access
 
-## Remediation Actions
+### Remediation Actions
 
 To remove unnecessary write access and standardise permissions across files, I used:
 
@@ -108,7 +109,7 @@ This ensured that:
 - others had no access
 - Restricted Directory Access
 
-To restrict the drafts directory so that only the owner could access it, I used:
+To restrict the `drafts` directory so that only the owner could access it, I used:
 
 ```bash
 chmod 700 drafts
@@ -119,13 +120,13 @@ This ensured that:
 - the owner had full access
 - group and others had no access
 
-## Verification of Corrected Permissions
+### Verification of Corrected Permissions
 
 After applying the permission changes, I re-ran `ls -la` to confirm that the files and directory permissions were corrected and aligned with least privilege principles.
 
 ![Corrected file permissions after remediation](images/permissions-after-remediation.png)
 
-## Security Impact
+### Security Impact
 
 These remediation actions:
 
@@ -134,7 +135,7 @@ These remediation actions:
 - strengthened enforcement of access control policies
 - improved system integrity and auditability
 
-## GRC Alignment
+### GRC Alignment
 
 This project demonstrates how technical controls support broader governance, risk, and compliance objectives, including:
 
@@ -143,10 +144,10 @@ This project demonstrates how technical controls support broader governance, ris
 - alignment with role-based access control principles
 - practical implementation of security policy enforcement
 
-## Outcome
+### Outcome
 
 By auditing and correcting file permissions, I transformed a misconfigured environment into one aligned with secure access control practices. This reduced both operational and compliance risk while demonstrating hands-on ability to assess and remediate permission-based security issues in Linux.
 
-## Portfolio Positioning
+### Portfolio Positioning
 
 This project complements my access control risk assessment by demonstrating how identified risks can be technically enforced and remediated within a live system environment.
