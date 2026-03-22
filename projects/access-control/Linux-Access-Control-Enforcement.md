@@ -72,7 +72,8 @@ Examples used in this project:
 - 700 = owner has full access; group and others have no access
 
 ## Remediation Actions
-Standardised File Permissions
+
+## Standardised File Permissions
 
 To remove unnecessary write access and standardise permissions across files, I used:
 
