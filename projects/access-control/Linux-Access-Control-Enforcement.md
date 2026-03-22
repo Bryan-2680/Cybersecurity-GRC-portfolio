@@ -103,7 +103,7 @@ This ensured that:
 - the owner had full access
 - group and others had no access
   
-# Security Impact
+## Security Impact
 
 These remediation actions:
 
@@ -120,10 +120,10 @@ This project demonstrates how technical controls support broader governance, ris
 - alignment with role-based access control principles
 - practical implementation of security policy enforcement
 
-# Outcome
+## Outcome
 
 By auditing and correcting file permissions, I transformed a misconfigured environment into one aligned with secure access control practices. This reduced both operational and compliance risk while demonstrating hands-on ability to assess and remediate permission-based security issues in Linux.
 
-# Portfolio Positioning
+## Portfolio Positioning
 
 This project complements my access control risk assessment by demonstrating how identified risks can be technically enforced and remediated within a live system environment.
