@@ -23,7 +23,9 @@ This initial state introduced risks related to unauthorised modification, excess
 
 Using the command below, I reviewed all files in the directory, including hidden files:
 
+```bash
 ls -la /home/researcher2/projects
+```
 
 ![Initial permission audit using ls -la](images/permissions-audit-ls-la.png)
 
@@ -33,7 +35,9 @@ The review identified the following issues:
 
 Some files had overly permissive access settings. For example:
 
+```bash
 -rw-rw-rw- project_k.txt
+```
 
 This allowed write access to both group and others, creating a risk of unauthorised modification and weakening data integrity.
 
@@ -41,7 +45,9 @@ This allowed write access to both group and others, creating a risk of unauthori
 
 Some files had permissions such as:
 
+```bash
 -rw-rw-r-- project_r.txt
+```
 
 This meant the group still had write access, which was not aligned with least privilege principles.
 
@@ -49,7 +55,9 @@ This meant the group still had write access, which was not aligned with least pr
 
 The drafts directory had permissions such as:
 
+```bash
 drwx--x--- drafts
+```
 
 This allowed group traversal of the directory, introducing risk of unauthorised visibility into sensitive content.
 
@@ -77,7 +85,9 @@ Examples used in this project:
 
 To remove unnecessary write access and standardise permissions across files, I used:
 
+```bash
 chmod 644 project_k.txt project_r.txt project_t.txt
+```
 
 This ensured that:
 
@@ -88,7 +98,9 @@ This ensured that:
 
 To protect the archived hidden file, I used:
 
+```bash
 chmod 440 .project_x.txt
+```
 
 This ensured that:
 
@@ -98,7 +110,9 @@ This ensured that:
 
 To restrict the drafts directory so that only the owner could access it, I used:
 
+```bash
 chmod 700 drafts
+```
 
 This ensured that:
 
