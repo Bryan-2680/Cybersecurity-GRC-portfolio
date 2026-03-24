@@ -1,4 +1,4 @@
-# Access Control Assessment – Least Privilege and Misuse Risk
+# Access Control Assessment – Least Privilege and Access Misuse
 
 This assessment examines how weaknesses in access governance and information sharing controls can increase the risk of unauthorised activity, fraud, and data exposure.
 
