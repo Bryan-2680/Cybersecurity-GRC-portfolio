@@ -1,4 +1,4 @@
-# Log Analysis – Suspicious Activity Investigation
+# Security Monitoring Analysis – Suspicious Activity Investigation
 
 ## 1. Objective
 The objective of this project is to analyse system log data to identify potentially suspicious activity using basic query techniques.
@@ -10,21 +10,22 @@ This aligns with real-world scenarios where system logs are used to support inci
 ---
 
 ## 2. Scenario
-A dataset of system activity logs is available, containing information such as user IDs, login times, IP addresses, and actions performed.
+A dataset of system activity logs is available from a business environment, containing information such as user IDs, login times, IP addresses, and actions performed.
 
-The goal is to identify unusual or potentially risky behaviour that may indicate unauthorised access or misuse.
+The purpose of the analysis is to identify abnormal behaviour that may indicate unauthorised access, weak authentication controls, or potential misuse of sensitive resources.
 
 ---
 
 ## 3. Analysis Approach
-The analysis focuses on identifying patterns that may indicate suspicious activity, including:
+The analysis follows a risk-based approach focused on identifying activity patterns that could indicate suspicious behaviour or control weaknesses.
 
+Key indicators reviewed include:
 - Multiple failed login attempts  
 - Logins from unusual locations  
 - Activity outside normal working hours  
 - Repeated access to sensitive resources
 
-The approach is risk-based, focusing on behaviours that could indicate potential compromise or control weaknesses.
+These indicators were selected because they may signal attempted account compromise, inappropriate access, or insufficient monitoring controls.
 
 ---
 
@@ -55,27 +56,39 @@ GROUP BY user_id, resource
 ORDER BY access_count DESC;
 ```
 
+### Repeated Access from the Same IP Address
+```sql
+SELECT ip_address, COUNT(*) AS activity_count
+FROM login_logs
+GROUP BY ip_address
+ORDER BY activity_count DESC;
+```
+
 ---
 
 ## 5. Key Findings
-- Certain users show repeated failed login attempts, which may indicate attempted credential compromise or brute force activity
-- Activity outside normal working hours may indicate compromised accounts or unauthorised access
-- Frequent access to sensitive data may indicate excessive permissions or potential misuse
+- Repeated failed login attempts may indicate attempted credential compromise or brute force activity  
+- Logins outside normal working hours may indicate compromised accounts or unauthorised access  
+- Frequent access to sensitive data may indicate excessive permissions, poor access control, or potential misuse  
+- Concentrated activity from specific IP addresses may warrant further review to determine whether access is expected or anomalous  
   
-These patterns highlight potential weaknesses in authentication controls and access management.
+These findings highlight the importance of strong authentication controls, effective monitoring, and regular access reviews.
 
 ---
 
 ## 6. Control Recommendations
-- Implement account lockout policies after repeated failed logins
-- Monitor and alert on unusual login patterns
-- Restrict and monitor access to sensitive data
-- Implement logging and centralised monitoring solutions
-- Conduct regular reviews of user activity
+- Implement account lockout policies after repeated failed logins  
+- Monitor and alert on unusual login patterns and access anomalies  
+- Restrict and monitor access to sensitive data  
+- Implement centralised logging and monitoring solutions  
+- Conduct regular reviews of user activity and access permissions  
+- Define thresholds for abnormal behaviour and establish escalation procedures for investigation  
 
 ---
 
 ## 7. Conclusion
-Log analysis is a key component of effective security monitoring.
-By identifying unusual patterns and behaviours, organisations can detect potential threats early and take appropriate action to reduce risk.
+Security monitoring is a key component of effective cybersecurity risk management.
+
+By identifying unusual patterns and behaviours in system logs, organisations can detect potential threats early, investigate suspicious activity, and take action to reduce operational and security risk.
+
 This project demonstrates how structured analysis of log data supports both incident detection and ongoing control improvement.
