@@ -104,11 +104,13 @@ Risk levels are classified as Low, Medium, High, or Critical.
 ---
 
 ## 9. Conclusion
-The organisation faces several common but significant security risks, particularly in access control and user authentication.
+The organisation faces several significant security risks, particularly in access control, authentication, and user awareness.
 
 These risks could result in operational disruption, data loss, or reputational damage if not addressed.
 
 By implementing basic security controls such as MFA, access restrictions, and user awareness training, the organisation can significantly reduce its risk exposure and improve its overall security posture.
+
+This assessment demonstrates a structured, risk-based approach to identifying security weaknesses and recommending practical controls in a small enterprise environment.
 
 ---
 
