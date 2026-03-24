@@ -36,7 +36,7 @@ SELECT user_id, COUNT(*) AS failed_attempts
 FROM login_logs
 WHERE status = 'FAILED'
 GROUP BY user_id
-ORDER BY failed_attempts DESC;Logins Outside Business Hours
+ORDER BY failed_attempts DESC;
 ```
 
 ### Logins Outside Business Hours
