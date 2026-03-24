@@ -41,7 +41,7 @@ The incident had operational impact and required timely resolution to prevent fu
 ## 5. Investigation & Root Cause Analysis
 Initial investigation involved reviewing system logs and transaction records.
 
-The root cause was identified as a internal configuration issue affecting message processing and validation, which resulted in a failed transaction.
+The root cause was identified as an internal configuration issue affecting message processing and validation, which resulted in failed transactions.
 
 ---
 
