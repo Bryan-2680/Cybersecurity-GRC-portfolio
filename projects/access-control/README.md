@@ -1,3 +1,3 @@
-This project presents an access control risk assessment, focusing on identifying excessive permissions, segregation of duties risks, and access control weaknesses.
+This project presents an access control assessment focused on excessive permissions, segregation of duties risks, weak access governance, and inappropriate sharing of sensitive information.
 
-The assessment recommends practical control improvements aligned with least privilege principles and stronger role-based access management.
+The objective is to demonstrate how stronger least privilege controls, access reviews, and governance processes can reduce operational, compliance, and information security risk.
