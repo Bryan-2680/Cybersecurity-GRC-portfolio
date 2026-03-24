@@ -1,3 +1,3 @@
-This project demonstrates basic log analysis and query-based investigation techniques used to identify suspicious or abnormal activity within a system.
+This project presents a log analysis and query-based investigation exercise focused on identifying suspicious or abnormal activity within a system.
 
-The focus is on extracting meaningful insights from data and understanding how monitoring supports security and risk management.
+The objective is to show how monitoring and data analysis can support incident detection, improve visibility, and reduce security risk.
