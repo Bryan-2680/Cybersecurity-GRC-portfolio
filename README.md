@@ -1,5 +1,5 @@
-# Cybersecurity-GRC-portfolio
-Cybersecurity GRC portfolio demonstrating risk assessment, incident response, access control, and security monitoring in enterprise-style scenarios.
+# Cybersecurity GRC portfolio
+Cybersecurity GRC portfolio demonstrating risk assessment, vulnerability analysis, incident response, access control, and security monitoring in enterprise-style scenarios.
 
 ## About Me
 I am a cybersecurity and GRC-focused professional currently working as an Application Support Engineer at Verizon. In my role, I support enterprise SAP and EDI systems, with a focus on vendor onboarding, system integration, incident investigation, and resolving operational issues.
@@ -24,11 +24,13 @@ This portfolio complements my professional experience by applying structured cyb
 ## Portfolio Overview
 This portfolio contains practical cybersecurity projects that demonstrate my ability to apply security and risk concepts in realistic scenarios.
 
-The focus is on:
+Focus areas include:
 - Security audits and risk assessment  
-- Incident response and root cause analysis  
-- Access control and permission risks  
-- Applying frameworks such as NIST and ISO 27001  
+- Vulnerability assessment and remediation planning  
+- Incident response and investigation  
+- Access control and governance  
+- Security monitoring and detection  
+- Application of frameworks such as NIST and ISO 27001     
 
 ---
 
@@ -38,6 +40,13 @@ The focus is on:
 Conducted a structured security audit of a small enterprise environment, identifying key risks and recommending controls aligned with NIST and ISO 27001 principles.
 
 Focus areas included access control, authentication, and user awareness, with emphasis on business impact and risk prioritisation.
+
+---
+
+### Vulnerability Assessment – Public-Facing Database Risk
+Conducted a qualitative vulnerability assessment of a public-facing database environment used by a small e-commerce business.
+
+The project focused on identifying likely threat sources, assessing business risk using likelihood and severity ratings, and recommending remediation measures to reduce exposure and improve resilience.
 
 ---
 
@@ -53,6 +62,15 @@ Performed an access control assessment within a role-based environment, identify
 
 Recommended governance and control improvements aligned with least privilege and access management best practices.
 
+---
+
+### Linux Access Control Enforcement – File Permission Audit
+Performed a Linux file permission audit to identify and remediate excessive access within a shared directory environment.
+
+The project focused on enforcing least privilege through permission review, remediation, and validation of corrected access settings.
+
+---
+
 ### Log Analysis – Suspicious Activity Investigation
 Analysed system log data to identify potentially suspicious behaviour using query-based techniques.
 
@@ -64,9 +82,11 @@ The project focused on detecting abnormal patterns, supporting incident investig
 - Risk analysis and control identification  
 - Incident investigation and root cause analysis  
 - IT governance and compliance awareness  
-- Access control and permission management  
-- Business-focused approach to security  
-
+- Access control and permission management
+- Vulnerability assessment and remediation planning
+- Security monitoring and log analysis 
+- Business-focused approach to security
+  
 ---
 
 ## Contact
