@@ -1,7 +1,9 @@
 # Access Control Assessment – Least Privilege and Misuse Risk
 
+This assessment examines how weaknesses in access governance and information sharing controls can increase the risk of unauthorised activity, fraud, and data exposure.
+
 ## 1. Objective
-The objective of this assessment is to evaluate access control risks within a role-based business environment, identify weaknesses related to excessive permissions, segregation of duties, poor access governance, and inappropriate data sharing, and recommend practical controls to reduce operational, compliance, and information security risk.
+The objective of this assessment is to evaluate access control risks within a role-based business environment, identify weaknesses related to excessive permissions, segregation of duties, access governance, and inappropriate data sharing, and recommend practical controls to reduce operational, compliance, and information security risk.
 
 ---
 
@@ -38,6 +40,8 @@ This is particularly relevant in systems supporting financial, operational, or c
 
 ### Risk 2: Segregation of Duties Conflicts
 A single user may have access to perform conflicting functions, such as creating and approving transactions, increasing the risk of fraud, error, or control bypass.
+
+This is particularly significant in environments where financial or approval-based processes are involved.
 
 **Impact:** High  
 **Likelihood:** Medium  
