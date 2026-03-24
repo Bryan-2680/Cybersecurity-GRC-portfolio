@@ -5,7 +5,7 @@
 
 I performed a security audit of file and directory permissions within a Linux environment `(/home/researcher2/projects)` to identify and remediate access control weaknesses.
 
-The objective was to enforce the principle of least privilege by removing excessive permissions and restricting access to sensitive resources. This project demonstrates the practical implementation of access control aligned with cybersecurity governance and risk management principles.
+The objective was to enforce the principle of least privilege by removing excessive permissions and restricting access to sensitive resources. This project demonstrates how technical access controls can reduce security risk and support broader governance and compliance objectives. 
 
 ### Initial Environment
 
@@ -14,7 +14,7 @@ The /home/researcher2/projects directory contained several files and one subdire
 Key issues identified in the initial environment included:
 
 - `project_k.txt` allowed read and write access for owner, group, and others
-- `project_r.txt` and ```project_t.txt``` allowed group write access
+- `project_r.txt` and `project_t.txt` allowed group write access
 - `project_x.txt` had inappropriate permissions for a hidden archived file
 - the `drafts` directory allowed group execute access, creating unnecessary directory exposure
 
@@ -30,7 +30,7 @@ ls -la /home/researcher2/projects
 
 ![Initial permission audit using ls -la](images/permissions-audit-ls-la.png)
 
-Using `ls -la` allowed me to review all files in the directory, including hidden files such as `.project_x.txt`, which would not appear in a standard `ls -l` output.
+Using `ls -la`, I reviewed both visible and hidden files to identify excessive permissions and access control weaknesses.
 
 The review identified the following issues:
 
@@ -42,7 +42,7 @@ Some files had overly permissive access settings. For example:
 -rw-rw-rw- project_k.txt
 ```
 
-This allowed write access to both group and others, creating a risk of unauthorised modification and weakening data integrity.
+This created a risk of unauthorised modification and weakened data integrity.
 
 ### Inconsistent Access Control
 
@@ -52,7 +52,7 @@ Some files had permissions such as:
 -rw-rw-r-- project_r.txt
 ```
 
-This meant the group still had write access, which was not aligned with least privilege principles.
+This granted unnecessary group write access and was not aligned with least privilege.
 
 ### Directory Exposure
 
@@ -61,50 +61,7 @@ The `drafts` directory had permissions such as:
 ```bash
 drwx--x--- drafts
 ```
-
-This allowed group traversal of the directory, introducing risk of unauthorised visibility into sensitive content.
-
-### Interpreting the Permissions String
-
-Linux permissions are shown as a 10-character string. For example:
-
-`-rw-rw-r--`
-
-Each character has a specific meaning:
-
-- the first character indicates the file type
-- the next three characters show the owner's permissions
-- the following three characters show the group's permissions
-- the final three characters show the permissions for others
-
-In this example:
-
-`-` indicates a regular file
-`rw-` means the owner can read and write
-`rw-` means the group can read and write
-`r--` means others can read only
-
-This is important from a security perspective because group write access may allow unauthorised modification of files.
-
-### Permission Interpretation
-
-Linux permissions are represented by three permission groups:
-
-- Owner
-- Group
-- Others
-
-Linux permissions can also be represented numerically. Each numeric value is a sum of the following permissions:
-
-4 = read
-2 = write
-1 = execute
-
-Examples used in this project:
-
-- 644 = owner can read and write; group and others can read only
-- 440 = owner and group can read only; others have no access
-- 700 = owner has full access; group and others have no access
+This allowed unnecessary directory traversal and increased exposure to sensitive content.
 
 ### Remediation Actions
 
