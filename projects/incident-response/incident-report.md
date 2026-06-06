@@ -1,6 +1,6 @@
 # Incident Response Report – Integration Failure Scenario
 
-This report presents an incident response case study involving a system integration failure, focusing on investigation, root cause analysis, and preventative controls.
+This report presents an incident response case study involving a system integration failure, focusing on investigation, root cause analysis, and preventative controls. It follows the NIST SP 800-61 incident-response lifecycle: Detection & Analysis, Containment/Eradication & Recovery, and Post-Incident Activity.
 
 ## 1. Incident Overview
 An issue was identified where purchase order messages failed to be successfully transmitted between systems, resulting in delays in order processing.
@@ -19,9 +19,9 @@ This prompted further investigation, during which failed transactions and missin
 ---
 
 ## 3. Timeline
-- Issue detected through failed transaction monitoring  
+- Issue detected through vendor reporting  
 - Initial investigation initiated  
-- Root cause identified through log analysis  
+- Root cause identified through process elimination  
 - Fix implemented and transactions reprocessed  
 - System monitored to confirm resolution
 
@@ -39,9 +39,12 @@ The incident had operational impact and required timely resolution to prevent fu
 ---
 
 ## 5. Investigation & Root Cause Analysis
-Initial investigation involved reviewing system logs and transaction records.
-
-The root cause was identified as an internal configuration issue affecting message processing and validation, which resulted in failed transactions.
+Investigation followed a structured elimination process to isolate the failure point along the message path, rather than assuming a cause.
+Message generation — confirmed the purchase order messages were being created correctly in the source system, ruling out an upstream data or generation error.
+Outbound transmission — checked that messages were leaving the source system and reaching the middleware/integration layer, to distinguish an internal failure from a transmission/connectivity issue.
+Connectivity and certificates — verified the connection and certificate validity to the vendor endpoint, ruling out an expired certificate or network failure as the cause.
+Acknowledgements — identified missing functional acknowledgements, confirming messages were not being successfully processed at the destination rather than simply lost in transit.
+Configuration and validation — traced the failure to an internal configuration issue affecting message processing and validation, which caused transactions to fail validation and not complete.
 
 ---
 
