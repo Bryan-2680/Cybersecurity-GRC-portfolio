@@ -8,6 +8,6 @@ internal system and external vendors.
 - Elimination-based root-cause analysis along the message path (generation → transmission → connectivity/certificates → acknowledgements → configuration)
 - Designing preventative controls (alerting on failed transactions, configuration validation) to reduce recurrence. 
 
-#### Key concepts: incident response, NIST IR lifecycle, root-cause analysis, EDI transaction integration, preventative controls, operational resilience.
+**Key concepts:** incident response, NIST IR lifecycle, root-cause analysis, EDI transaction integration, preventative controls, operational resilience.
 
 Demonstrative scenario based on the types of EDI transaction failures common in enterprise SAP environments. Anonymised and illustrative.
