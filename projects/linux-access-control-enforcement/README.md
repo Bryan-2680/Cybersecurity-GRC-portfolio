@@ -8,6 +8,6 @@ A hands-on Linux exercise reviewing and remediating file and directory permissio
 - Verifying the corrected state rather than assuming the change worked
 - Understanding Unix discretionary access control (DAC) and how it differs from role-based access control (RBAC), while serving the same least-privilege objective
 
-#### Key concepts: least privilege, file permissions, `chmod` notation (read=4 / write=2 / execute=1), DAC vs RBAC, remediation and verification.
+**Key concepts:** least privilege, file permissions, `chmod` notation (read=4 / write=2 / execute=1), DAC vs RBAC, remediation and verification.
 
 Hands-on lab exercise (Google Cybersecurity Certificate). Included to demonstrate practical command-line ability, not a production system.
