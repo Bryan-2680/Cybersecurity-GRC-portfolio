@@ -1,16 +1,16 @@
-# Access Control Assessment – Least Privilege and Access Misuse
+## Access Control Assessment – Least Privilege and Access Misuse
 
 This assessment examines how weaknesses in access governance and information sharing controls can increase the risk of unauthorised activity, fraud, and data exposure.
 
 Note: This is a demonstrative scenario based on common access-control risks in role-based enterprise systems. It is anonymised and intended to show the application
 of a structured, risk-based access assessment, not to describe a specific real-world environment.
 
-## 1. Objective
+### 1. Objective
 The objective of this assessment is to evaluate access control risks within a role-based business environment, identify weaknesses related to excessive permissions, segregation of duties, access governance, and inappropriate data sharing, and recommend practical controls to reduce operational, compliance, and information security risk.
 
 ---
 
-## 2. Scenario
+### 2. Scenario
 The environment is a business-critical enterprise system supporting operational and transactional processes. 
 
 Users are assigned access based on business need, but over time may accumulate unnecessary permissions due to role changes, temporary access, weak offboarding, or lack of regular access reviews.
@@ -19,36 +19,36 @@ The assessment also considers the risk of sensitive information being exposed th
 
 ---
 
-## 3. Assessment Approach
+### 3. Assessment Approach
 
 This assessment follows a qualitative, risk-based approach, with each risk scored on a likelihood × impact basis to support prioritisation. The review focuses on user access, role design, control effectiveness, and the handling of sensitive information —considering how excessive permissions, conflicting access rights, weak lifecycle management, and unrestricted sharing increase the likelihood of unauthorised activity,
 fraud, or data exposure.
 
 ---
 
-## 4. Key Risks Identified
+### 4. Key Risks Identified
 
-### Risk 1: Excessive Permissions
+#### Risk 1: Excessive Permissions
 Users may hold access beyond what their role requires, increasing the risk of unauthorised actions, accidental changes, or misuse of sensitive information —
 particularly in systems supporting financial, operational, or customer processes
 
 **Impact:** High  
 **Likelihood:** Medium  
 
-### Risk 2: Segregation of Duties Conflicts
+#### Risk 2: Segregation of Duties Conflicts
 A single user may be able to perform conflicting functions, such as creating and approving transactions, increasing the risk of fraud, error, or control bypass —
 especially significant in approval-based financial processes
 
 **Impact:** High  
 **Likelihood:** Medium  
 
-### Risk 3: Inadequate Access Reviews and Offboarding
+#### Risk 3: Inadequate Access Reviews and Offboarding
 Access may not be reviewed regularly, and permissions may persist after role changes or once no longer required, leaving dormant, excessive, or inappropriate access in place.
 
 **Impact:** High  
 **Likelihood:** High  
 
-### Risk 4: Inappropriate Sharing of Sensitive Information
+#### Risk 4: Inappropriate Sharing of Sensitive Information
 Sensitive documents or folders may be shared too broadly due to weak restrictions orfailure to remove temporary access, exposing internal information to unauthorised parties accidentally or through poor handling.
 
 **Impact:** High  
@@ -56,7 +56,7 @@ Sensitive documents or folders may be shared too broadly due to weak restriction
 
 ---
 
-## 5. Example – Identifying a Segregation of Duties Conflict
+### 5. Example – Identifying a Segregation of Duties Conflict
 To illustrate the assessment in practice, consider a representative case:
 
 A user moves from the Procurement team to the Finance team. Their new Finance role grants invoice/payment approval rights, but their previous purchase-order
@@ -69,7 +69,7 @@ This single case demonstrates two of the risks below at once: an SoD conflict (R
 ---
 
 
-## 6. Business Impact
+### 6. Business Impact
 
 Weak access control practices can result in:
 - Unauthorised transactions or inappropriate system activity  
@@ -81,7 +81,7 @@ Weak access control practices can result in:
 
 ---
 
-## 7. Control Recommendations
+### 7. Control Recommendations
 
 - Enforce least privilege access principles across systems and shared resources  
 - Implement regular user access reviews and periodic recertification by business or system owners  
@@ -94,7 +94,7 @@ Weak access control practices can result in:
 
 ---
 
-## 7. Framework Alignment
+### 8. Framework Alignment
 This assessment is broadly aligned with:
 
 - Least privilege principles ans role-based access control (RBAC) good practice  
