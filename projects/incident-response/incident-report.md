@@ -1,11 +1,11 @@
-# Incident Response Report – Integration Failure Scenario
+## Incident Response Report – Integration Failure Scenario
 
 This report presents an incident response case study involving a system integration failure, focusing on detection, structured investigation, root cause analysis, and preventative controls. The report follows the NIST SP 800-61 incident-response lifecycle: Preparation; Detection & Analysis, Containment, Eradication & Recovery, and Post-Incident Activity applied to a realistic enterprise integration scenario. 
 
 Note: This is a demonstrative scenario based on the types of EDI / system integration failures common in enterprise SAP environments. It is anonymised and
 intended to show the application of a structured incident-response method, not to describe a specific real-world event.
 
-## 1. Incident Overview
+### 1. Incident Overview
 An issue was identified where purchase order (PO) messages failed to be successfully transmitted between an internal system and an external vendor, resulting in delays in order processing.
 
 The incident affected communication between internal systems and external vendors, disrupting normal PO and invoice processing and delaying downstream fulfilment
@@ -14,9 +14,9 @@ The incident affected communication between internal systems and external vendor
 
 ---
 
-## 2. Detection & Analysis
+### 2. Detection & Analysis
 
-### 2.1 Detection
+#### 2.1 Detection
 
 The incident was initially identified when a vendor reported that they had not received a purchase order they were expecting. This external report — rather than an
 internal alert — was the first signal, which itself became a key lesson. 
@@ -24,7 +24,7 @@ internal alert — was the first signal, which itself became a key lesson.
 Follow-up checks confirmed the issue: failed transactions and missing functional acknowledgements were identified, verifying that messages were not being processed
 correctly.
 
-### 2.2. Investigation & Root Cause Analysis
+#### 2.2. Investigation & Root Cause Analysis
 Investigation followed a structured elimination process to isolate the failure point along the message path, rather than assuming a cause.
 
 - Message generation - Confirmed the purchase order messages were being created correctly in the source system, ruling out an upstream data or generation error.
@@ -41,7 +41,7 @@ This step-by-step approach eliminated potential issues and isolated the root cau
 
 ---
 
-## 3. Timeline
+### 3. Timeline
 - Vendor reports a missing/expected purchase order
 - Failed transactions and missing acknowledgements confirmed
 - Structured investigation initiated along the message path
@@ -51,7 +51,7 @@ This step-by-step approach eliminated potential issues and isolated the root cau
 
 ---
 
-## 4. Impact Assessment
+### 4. Impact Assessment
 - Delayed order processing  
 - Potential disruption to supply chain operations  
 - Risk of incomplete or duplicate transactions  
@@ -62,7 +62,7 @@ The incident had operational impact and required timely resolution to prevent fu
 
 ---
 
-## 5. Containment, Eradication & Recovery
+### 5. Containment, Eradication & Recovery
 
 - Containment - identified the scope of affected transactions to prevent further
 failed messages from compounding the backlog.
@@ -75,16 +75,16 @@ confirm restoration of normal operations and successful acknowledgements.
  
 ---
 
-## 6. Post-Incident Activity
+### 6. Post-Incident Activity
 
-### 6.1 Lessons Learned
+#### 6.1 Lessons Learned
 
 - Detection relied on an external vendor report rather than internal monitoring — highlighting the need for proactive alerting for earlier detection.
 - Limited real-time visibility of transaction failures slowed initial detection.
 - A structured, repeatable investigation method (elimination along the message path) shortened root-cause analysis and should be standardised.
 - Configuration management and validation controls are critical to preventing recurrence.
 
-### 6.2. Preventative Controls
+#### 6.2. Preventative Controls
 
 Based on the incident, the following control improvements are recommended:
 
@@ -96,7 +96,7 @@ Based on the incident, the following control improvements are recommended:
 
 ---
 
-## 7. Conclusion
+### 7. Conclusion
 This incident highlights the importance of effective monitoring, structured investigation, and control design in maintaining system reliability. Mapping the
 response to the NIST incident-response lifecycle ensured each phase — from detection through to post-incident improvement — was addressed deliberately rather than
 reactively.
