@@ -6,7 +6,7 @@ internal system and external vendors.
 
 - Structured incident response: detection → analysis → containment/eradication/recovery→ post-incident activity
 - Elimination-based root-cause analysis along the message path (generation → transmission → connectivity/certificates → acknowledgements → configuration)
-- Designing preventative controls (alerting on failed transactions, configurationvalidation) to reduce recurrence
+- Designing preventative controls (alerting on failed transactions, configuration validation) to reduce recurrence. 
 
 #### Key concepts: incident response, NIST IR lifecycle, root-cause analysis, EDI transaction integration, preventative controls, operational resilience.
 
