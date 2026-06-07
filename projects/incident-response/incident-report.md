@@ -27,15 +27,15 @@ correctly.
 #### 2.2. Investigation & Root Cause Analysis
 Investigation followed a structured elimination process to isolate the failure point along the message path, rather than assuming a cause.
 
-- Message generation - Confirmed the purchase order messages were being created correctly in the source system, ruling out an upstream data or generation error.
+- Message generation - Confirmed the purchase order transactions were being created correctly in the source system, ruling out an upstream data or generation error.
 
-- Outbound transmission - Checked that messages were leaving the source system and reaching the middleware/integration layer, to distinguish an internal failure from a transmission/connectivity issue.
+- Outbound transmission - Checked that idocs were leaving the source system and reaching the middleware/integration layer, to distinguish an internal failure from a transmission/connectivity issue.
 
 - Connectivity and certificates - Verified the connection and certificate validity to the vendor endpoint, ruling out an expired certificate or network failure as the cause.
 
 - Acknowledgements - Identified missing functional acknowledgements, confirming messages were not being successfully processed at the destination rather than simply lost in transit.
 
-- Configuration and validation - Traced the failure to an internal configuration issue affecting message processing and validation, which caused transactions to fail validation and not complete.
+- Configuration and validation - Traced the failure to an internal configuration issue affecting message processing and validation, which caused EDI transactions to fail validation and not process successfully.
 
 This step-by-step approach eliminated potential issues and isolated the root cause to a configuration error, rather than a connectivity, certificate, or vendor-side issue — ensuring the correct fix was applied the first time rather than through trial and error.
 
@@ -64,14 +64,12 @@ The incident had operational impact and required timely resolution to prevent fu
 
 ### 5. Containment, Eradication & Recovery
 
-- Containment - identified the scope of affected transactions to prevent further
+- Containment - identified the scope of affected purchase orders to prevent further
 failed messages from compounding the backlog.
 
-- Eradication — corrected the underlying configuration issue affecting message
-processing and validation.
+- Eradication — corrected the underlying configuration issue affecting EDI transaction processing
 
-- Recovery — reprocessed the affected transactions and monitored the system to
-confirm restoration of normal operations and successful acknowledgements.
+- Recovery — reprocessed the affected transactions and monitored the system to confirm restoration of normal transaction processing and successful acknowledgements.
  
 ---
 
