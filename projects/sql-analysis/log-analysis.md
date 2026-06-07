@@ -1,18 +1,18 @@
-# Security Monitoring Analysis – Suspicious Activity Investigation
+## Security Monitoring Analysis – Suspicious Activity Investigation
 
-## 1. Objective
+### 1. Objective
 To analyse system log data using SQL queries to identify potentially suspiciousactivity, demonstrating how monitoring and structured data analysis support the earlydetection and investigation of security issues. This maps to the Detect function of the NIST Cybersecurity Framework — establishing baselines and surfacing deviations.
 
 Note: This is a demonstrative log-analysis exercise using illustrative sample data. It is anonymised and intended to show the use of SQL to query authentication and access logs for suspicious patterns, not to describe a real production environment or SIEM platform.
 
 ---
 
-## 2. Scenario
+### 2. Scenario
 A dataset of system activity logs from a business environment, containing user IDs, login times, IP addresses, status, and actions performed. The goal is to identify abnormal behaviour that may indicate unauthorised access, weak authentication controls, or misuse of sensitive resources.
 
 ---
 
-## 3. Analysis Approach
+### 3. Analysis Approach
 A risk-based approach focused on identifying activity patterns that could indicate suspicious behaviour or control weaknesses. 
 
 Detection indicators reviewed:
@@ -25,11 +25,11 @@ These were selected because they are common indicators of attempted account comp
 
 ---
 
-## 4. Queries and Illustrative Findings
+### 4. Queries and Illustrative Findings
 
 Each query is followed by representative sample output and an interpretation, to show not just the query but how an analyst would read the result.
 
-### Failed Login Attempts
+#### Failed Login Attempts
 ```sql
 SELECT user_id, COUNT(*) AS failed_attempts
 FROM login_logs
@@ -42,7 +42,7 @@ Explanation: groups failed logins by user and counts them, surfacing accounts wi
 Illustrative result: user_id 4172 returned 47 failed attempts within one hour, against a baseline of 2–3 for other users. This concentration is consistent with a
 brute-force or credential-stuffing attempt and would warrant immediate investigation and a temporary account lock.
 
-### Logins Outside Business Hours
+#### Logins Outside Business Hours
 ```sql
 SELECT user_id, login_time
 FROM login_logs
@@ -53,7 +53,7 @@ Explanation: flags logins outside a 06:00–20:00 window as candidates for revie
 Illustrative result: a successful login for user_id 2210 at 03:14 stood out against that user's normal 09:00–17:00 pattern — a possible compromised account or
 unauthorised access requiring confirmation with the user.
 
-### Access to Sensitive Resources
+#### Access to Sensitive Resources
 ```sql
 SELECT user_id, resource, COUNT(*) AS access_count
 FROM access_logs
@@ -65,7 +65,7 @@ Explanation: counts accesses to a sensitive resource per user to surface disprop
 
 Illustrative result: one user accounted for a high share of sensitive-data accesses relative to peers — potentially excessive permissions, misuse, or simply a legitimate role, and therefore a candidate for an access review rather than an immediate alert.
 
-### Repeated Access from the Same IP Address
+#### Repeated Access from the Same IP Address
 ```sql
 SELECT ip_address, COUNT(*) AS activity_count
 FROM login_logs
@@ -78,7 +78,7 @@ Illustrative result: a single unfamiliar IP generated a disproportionate volume 
 
 ---
 
-## 5. Key Findings
+### 5. Key Findings
 - High volumes of failed logins for a single account indicate likely credential compromise or brute-force activity.
 - Successful logins outside normal hours may indicate compromised accounts or unauthorised access.
 - Disproportionate access to sensitive data may indicate excessive permissions or misuse, and should trigger an access review.
@@ -88,7 +88,7 @@ A recurring theme: raw indicators require baselining and context before they bec
 
 ---
 
-## 6. Control Recommendations
+### 6. Control Recommendations
 - Implement account lockout policies after repeated failed logins  
 - Monitor and alert on unusual login patterns and access anomalies  
 - Restrict and monitor access to sensitive data  
@@ -98,12 +98,12 @@ A recurring theme: raw indicators require baselining and context before they bec
 
 ---
 
-## 7. Framework Alignment
+### 7. Framework Alignment
 This project supports the NIST Cybersecurity Framework – Detect function (anomalies and events; security continuous monitoring), and reinforces Protect through the authentication and access-control recommendations
 
 ---
 
-## 8. Conclusion
+### 8. Conclusion
 Security monitoring is a key component of effective cybersecurity risk management. By querying log data for unusual patterns — and, importantly, interpreting those patterns against a baseline — organisations can detect potential threats early, investigate suspicious activity, and improve controls. 
 
 This project demonstrates how structured SQL-based log analysis supports both incident detection and ongoing control improvement.
